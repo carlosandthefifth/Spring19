@@ -1,7 +1,7 @@
-<apex:page >
+<apex:page>
 
 <script>
-    var lexOrigin = "https://test.salesforce.com";
+    var lexOrigin = "https://koda32318--yudhisb.lightning.force.com";
     window.addEventListener("message", function(event) {
         if (event.origin !== lexOrigin) {
             // Not the expected origin: reject message!

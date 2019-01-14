@@ -3,13 +3,13 @@
 
     <aura:attribute name="message" type="String"/>
     <aura:attribute name="vfHost" type="String"
-            default="test.salesforce.com"/>
+            default="koda32318--yudhisb--c.cs77.visual.force.com"/>
 
     <!-- Input field for message "data" -->
     <lightning:input type="text" label="Message:" value="{!v.message}"/>
     <lightning:button label="Send to VF" onclick="{!c.sendToVF}"/>
 
     <!-- The Visualforce page to send data to -->
-    <iframe aura:id="vfFrame" src="{!'https://' + v.vfHost + '/apex/myvfpage'}"/>
+    <iframe aura:id="vfFrame" src="{!'https://' + v.vfHost + '/apex/getmsgfromlc'}"/>
     
 </aura:component>
